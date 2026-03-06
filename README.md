@@ -1,5 +1,5 @@
 # 💫 About Me:
-I currently study at Scaler School Of Technology<br>I study SpringBoot
+I currently study at Scaler School Of Technology
 
 
 ## 🌐 Socials:
