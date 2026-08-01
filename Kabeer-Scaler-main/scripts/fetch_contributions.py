@@ -22,28 +22,23 @@ def fetch_calendar() -> list[dict[str, object]]:
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
-    cells = soup.select("td.ContributionCalendar-day")
+    cells = soup.select("[data-date][data-level]")
     if not cells:
         raise RuntimeError("No contribution calendar cells were found in the public GitHub page.")
 
     data: list[dict[str, object]] = []
     for cell in cells:
-        label = (cell.get("aria-label") or "").strip()
-        if not label:
+        date_text = (cell.get("data-date") or "").strip()
+        level = (cell.get("data-level") or "0").strip()
+        if not date_text:
             continue
 
-        match = re.search(r"(\d+) contributions on ([A-Za-z]{3} \d{1,2}, \d{4})", label)
-        if match:
-            count = int(match.group(1))
-            date_text = datetime.strptime(match.group(2), "%b %d, %Y").strftime("%Y-%m-%d")
-            data.append({"date": date_text, "level": count})
+        try:
+            level_value = int(level)
+        except ValueError:
             continue
 
-        if "No contributions on" in label:
-            date_text = re.search(r"No contributions on ([A-Za-z]{3} \d{1,2}, \d{4})", label)
-            if date_text:
-                parsed_date = datetime.strptime(date_text.group(1), "%b %d, %Y").strftime("%Y-%m-%d")
-                data.append({"date": parsed_date, "level": 0})
+        data.append({"date": date_text, "level": level_value})
 
     if not data:
         raise RuntimeError("Unable to parse any contribution dates or levels from the public GitHub page.")
