@@ -61,7 +61,7 @@ def build_svg(days: list[dict[str, int | str]]) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" width="860" height="260">
   {style}
   <rect x="1" y="1" width="858" height="258" rx="16" class="frame" />
-  <text x="18" y="26" class="title">avi@github ~ $ ./contributions.sh</text>
+  <text x="18" y="26" class="title">Kabeer@github ~ $ ./contributions.sh</text>
   <text x="18" y="48" class="small">public contribution graph · refreshed from GitHub</text>
   {''.join(cells)}
   <text x="18" y="172" class="small">Less</text>

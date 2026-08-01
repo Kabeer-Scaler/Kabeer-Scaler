@@ -45,7 +45,7 @@ def build_svg(rows: list[str]) -> str:
     </clipPath>
   </defs>
   <rect width="420" height="560" rx="16" fill="#0d1117" />
-  <text x="18" y="20" fill="#8b949e" font-family="Consolas, monospace" font-size="14">avi@github ~ $ whoami</text>
+  <text x="18" y="20" fill="#8b949e" font-family="Consolas, monospace" font-size="14">Kabeer@github ~ $ whoami</text>
   <g clip-path="url(#portraitClip)">
     {''.join(rendered)}
   </g>
