@@ -33,13 +33,13 @@ def ascii_rows() -> list[str]:
 def build_svg(rows: list[str]) -> str:
     rendered = []
     max_width = max(len(row) for row in rows)
-    svg_width = max(720, max_width * 7 + 40)
-    svg_height = max(560, len(rows) * 10 + 40)
+    svg_width = max(380, max_width * 6 + 40)
+    svg_height = max(230, len(rows) * 5 + 40)
 
     for idx, row in enumerate(rows):
-        y = 30 + idx * 10
+        y = 30 + idx * 5
         rendered.append(
-            f'<text x="18" y="{y}" fill="#d0d7de" opacity="0.96" font-family="Consolas, monospace" font-size="6.5">{row}</text>'
+            f'<text x="18" y="{y}" fill="#d0d7de" opacity="0.96" font-family="Consolas, monospace" font-size="4.6">{row}</text>'
         )
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_width} {svg_height}" width="{svg_width}" height="{svg_height}">

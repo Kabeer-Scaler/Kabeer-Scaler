@@ -19,11 +19,11 @@ def find_source_image() -> Path:
 def main() -> None:
     source = find_source_image()
     image = Image.open(source).convert("RGB")
-    image = ImageOps.fit(image, (640, 640), method=Image.Resampling.LANCZOS)
+    image = ImageOps.fit(image, (720, 960), method=Image.Resampling.LANCZOS)
     image = ImageOps.grayscale(image)
     image = ImageEnhance.Contrast(image).enhance(1.9)
     image = image.filter(ImageFilter.SHARPEN)
-    image = image.resize((100, 53), Image.Resampling.BICUBIC)
+    image = image.resize((100, 130), Image.Resampling.BICUBIC)
     image.save(OUTPUT)
     print(f"Prepared portrait saved to {OUTPUT}")
 
