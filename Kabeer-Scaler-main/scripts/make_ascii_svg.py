@@ -32,23 +32,19 @@ def ascii_rows() -> list[str]:
 
 def build_svg(rows: list[str]) -> str:
     rendered = []
-    max_width = max(len(row) for row in rows)
-    svg_width = max(380, max_width * 6 + 40)
-    svg_height = max(230, len(rows) * 5 + 40)
-
     for idx, row in enumerate(rows):
-        y = 30 + idx * 5
+        y = 30 + idx * 10
         rendered.append(
-            f'<text x="18" y="{y}" fill="#d0d7de" opacity="0.96" font-family="Consolas, monospace" font-size="4.6">{row}</text>'
+            f'<text x="18" y="{y}" fill="#d0d7de" opacity="0.96" font-family="Consolas, monospace" font-size="9">{row}</text>'
         )
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_width} {svg_height}" width="{svg_width}" height="{svg_height}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" width="420" height="560">
   <defs>
     <clipPath id="portraitClip">
-      <rect x="0" y="0" width="{svg_width}" height="{svg_height}" rx="16" />
+      <rect x="0" y="0" width="420" height="560" rx="16" />
     </clipPath>
   </defs>
-  <rect width="{svg_width}" height="{svg_height}" rx="16" fill="#0d1117" />
+  <rect width="420" height="560" rx="16" fill="#0d1117" />
   <text x="18" y="20" fill="#8b949e" font-family="Consolas, monospace" font-size="14">Kabeer@github ~ $ whoami</text>
   <g clip-path="url(#portraitClip)">
     {''.join(rendered)}
