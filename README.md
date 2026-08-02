@@ -82,13 +82,3 @@ those systems need in order to be useful.
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kabeer-Scaler&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8)
 
 </div>
-
----
-
----
-
-<div align="center">
-
-<sub>`~$ Keep learning. Keep building. Ship impact.`</sub>
-
-</div>
