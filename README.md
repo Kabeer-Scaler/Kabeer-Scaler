@@ -85,39 +85,6 @@ those systems need in order to be useful.
 
 ---
 
-## `cat build.md`
-
-This repository is not just a README; it is the generator that draws one. Every image above is
-an SVG built by the scripts in [`scripts/`](./scripts), from a single source of truth in
-[`scripts/profile_data.py`](./scripts/profile_data.py).
-
-| Script | What it does |
-| :--- | :--- |
-| `profile_data.py` | Every string, colour and layout constant used by the renderers. |
-| `prep_photo.py` | Cuts the portrait out of its background and frames it head-and-shoulders. |
-| `make_ascii.py` | Samples that matte into fixed-width ASCII, correcting for cell aspect ratio. |
-| `make_profile_card.py` | Draws the whole neofetch card as one self-contained SVG. |
-| `fetch_contributions.py` | Scrapes the public contribution calendar into `data/contributions.json`. |
-| `render_heatmap_svg.py` | Renders that data as the contribution graph and stat tiles. |
-| `build_all.py` | Runs the above in dependency order. |
-
-```bash
-git clone https://github.com/Kabeer-Scaler/Kabeer-Scaler.git
-cd Kabeer-Scaler
-python -m venv .venv && .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-python scripts/build_all.py --all               # portrait + contributions + all SVGs
-python scripts/build_all.py                     # just redraw from committed data
-```
-
-The card is deliberately **one** SVG rather than a row of images in HTML: GitHub strips CSS from
-README markup, so a flexbox layout silently collapses into a stack. A single SVG renders
-identically on GitHub, in an editor preview and on disk.
-
-A [GitHub Action](./.github/workflows/update-profile.yml) re-runs the contribution steps every
-morning and commits the refreshed graph, so the numbers above are never stale.
-
 ---
 
 <div align="center">
