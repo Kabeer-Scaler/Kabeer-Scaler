@@ -6,12 +6,20 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - "scripts/**"
+      - "data/**"
+      - ".github/workflows/update-profile.yml"
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-profile
+  cancel-in-progress: true
+
 jobs:
-  heatmap:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,20 +27,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
 
+      # The portrait pipeline (Pillow/rembg) is deliberately skipped here: the
+      # ASCII art is committed and only changes when the source photo does.
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install requests beautifulsoup4
 
-      - name: Fetch contribution data
+      - name: Refresh contributions and redraw the SVGs
         env:
           GH_PROFILE_USER: Kabeer-Scaler
-        run: python scripts/fetch_contributions.py
-
-      - name: Render SVG heatmap
-        run: python scripts/render_heatmap_svg.py
+        run: python scripts/build_all.py --fetch
 
       - name: Commit refreshed assets
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          commit_message: "chore: refresh profile art [skip ci]"
+          file_pattern: "data/contributions.json assets/*.svg"

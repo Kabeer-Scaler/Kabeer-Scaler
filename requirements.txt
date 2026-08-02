@@ -1,0 +1,9 @@
+# Contribution graph (all that CI needs)
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# Portrait -> ASCII pipeline (only needed when the source photo changes)
+Pillow>=10.0.0
+numpy>=1.26.0
+rembg>=2.0.0
+onnxruntime>=1.17.0
