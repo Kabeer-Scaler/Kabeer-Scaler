@@ -53,7 +53,6 @@ ROWS = [
             "BITS Pilani, B.Sc. Computer Science (2024 - 2027)",
         ],
     ),
-    ("code", "Currently", ORANGE, ["Building ML systems, LLM apps and clean backends"]),
     (
         "stack",
         "Tech Stack",
