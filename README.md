@@ -75,10 +75,3 @@ those systems need in order to be useful.
 <div align="center">
   <img src="./assets/contrib-heatmap.svg" alt="Contribution graph" width="100%">
 </div>
-
-<div align="center">
-
-![Stats](https://github-readme-stats.vercel.app/api?username=Kabeer-Scaler&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950&include_all_commits=true&count_private=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kabeer-Scaler&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8)
-
-</div>
