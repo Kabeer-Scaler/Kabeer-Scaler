@@ -14,13 +14,13 @@
 
 ## `whoami`
 
- I'm a Computer Science student focused on Machine Learning and Deep Learning.
+I'm a Computer Science student focused on Machine Learning and Deep Learning.
 
- Currently building strong foundations in ML while exploring Computer Vision,
- Natural Language Processing, and modern AI systems.
+Currently building strong foundations in ML while exploring Computer Vision,
+Natural Language Processing, and modern AI systems.
 
- I enjoy understanding the mathematics behind models, building end-to-end
- projects, and writing clean, production-oriented code.
+I enjoy understanding the mathematics behind models, building end-to-end
+projects, and writing clean, production-oriented code.
 
 - Currently building end-to-end ML and AI projects, from data prep to a deployed interface.
 - Currently exploring LLMs, RAG pipelines and agentic systems.
