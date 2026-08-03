@@ -14,10 +14,13 @@
 
 ## `whoami`
 
-I am **Kabeer**, a Computer Science undergrad studying at **Scaler School of Technology** and
-**BITS Pilani** at the same time. I spend most of my time on **machine learning**, **deep
-learning** and **LLM-powered systems**, and the rest of it building the backends and tools that
-those systems need in order to be useful.
+I'm a Computer Science student focused on Machine Learning and Deep Learning.
+
+Currently building strong foundations in ML while exploring Computer Vision,
+Natural Language Processing, and modern AI systems.
+
+I enjoy understanding the mathematics behind models, building end-to-end
+projects, and writing clean, production-oriented code.
 
 - Currently building end-to-end ML and AI projects, from data prep to a deployed interface.
 - Currently exploring LLMs, RAG pipelines and agentic systems.
