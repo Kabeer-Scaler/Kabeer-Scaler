@@ -67,14 +67,6 @@ ICONS = {
     "chat": '<path d="M1 2.4h12v7.4H6.2L3 12.8V9.8H1z"/>',
 }
 
-CHIPS = [
-    ("PYTHON", "#3776ab"),
-    ("PYTORCH", "#ee4c2c"),
-    ("JAVA", "#f0883e"),
-    ("SQL", "#39c5cf"),
-    ("GIT", "#f14e32"),
-]
-
 
 def esc(value: str) -> str:
     return escape(value, quote=False)
@@ -123,21 +115,6 @@ def render_rows(top: float, gap: float) -> tuple[str, float]:
         y += len(values) * VALUE_LINE_H + gap
 
     return "".join(out), y - gap - VALUE_LINE_H
-
-
-def render_chips(baseline: float) -> str:
-    out = []
-    x = WIDTH - PAD
-    for text, colour in reversed(CHIPS):
-        width = len(text) * 6.4 + 18
-        x -= width
-        out.append(
-            f'<rect x="{x:.1f}" y="{baseline - 13:.1f}" width="{width:.1f}" height="19" rx="9.5" '
-            f'fill="{colour}" fill-opacity="0.14" stroke="{colour}" stroke-opacity="0.45"/>'
-            f'<text class="chip" x="{x + width / 2:.1f}" y="{baseline:.1f}" fill="{colour}">{text}</text>'
-        )
-        x -= 8
-    return "".join(out)
 
 
 def build_svg() -> str:
@@ -190,7 +167,6 @@ viewBox="0 0 {WIDTH} {height}" role="img" aria-label="Kabeer - neofetch style pr
       .value {{ font-size: 13px; fill: {TEXT}; }}
       .ascii {{ font-size: {ASCII_FONT}px; fill: url(#ink); }}
       .foot {{ font-size: 13px; fill: {MUTED}; }}
-      .chip {{ font-size: 10px; font-weight: 600; letter-spacing: 0.6px; text-anchor: middle; }}
       .cursor {{ animation: blink 1.1s steps(1) infinite; }}
       @keyframes blink {{ 0%, 55% {{ opacity: 1; }} 56%, 100% {{ opacity: 0; }} }}
     </style>
@@ -216,7 +192,6 @@ stroke="{BORDER}" stroke-dasharray="3 5"/>
     <tspan fill="{ACCENT}">~$</tspan> {esc(FOOTER)}
     <tspan class="cursor" fill="{ACCENT}">&#9608;</tspan>
   </text>
-  {render_chips(footer_baseline)}
 </svg>
 """
 

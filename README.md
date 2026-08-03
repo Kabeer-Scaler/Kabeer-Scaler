@@ -6,8 +6,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Kabeer--Scaler-58a6ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/Kabeer-Scaler)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117)](https://www.linkedin.com/in/)
-[![Email](https://img.shields.io/badge/Email-Say%20hello-ea4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:)
-[![Profile views](https://komarev.com/ghpvc/?username=Kabeer-Scaler&style=for-the-badge&color=3fb950&label=PROFILE+VIEWS)](https://github.com/Kabeer-Scaler)
+[![Email](https://img.shields.io/badge/Email-KABEER.24299%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:KABEER.24299@gmail.com)
 
 </div>
 
@@ -22,7 +21,7 @@ those systems need in order to be useful.
 
 - Currently building end-to-end ML and AI projects, from data prep to a deployed interface.
 - Currently exploring LLMs, RAG pipelines and agentic systems.
-- Comfortable moving between a Jupyter notebook, a Spring Boot service and a React front end.
+- Comfortable moving between a Jupyter notebook, a training loop and the service around them.
 - Always happy to talk about model evaluation, system design or a good terminal setup.
 
 ---
@@ -43,9 +42,7 @@ those systems need in order to be useful.
 ![Python](https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-f0883e?style=flat-square&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-39c5cf?style=flat-square&logo=mysql&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599c?style=flat-square&logo=cplusplus&logoColor=white)
 
 **Machine learning and data**
 
@@ -53,20 +50,7 @@ those systems need in order to be useful.
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-f7931e?style=flat-square&logo=scikitlearn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5c3ee8?style=flat-square&logo=opencv&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-f37626?style=flat-square&logo=jupyter&logoColor=white)
-
-**Backend, data stores and tooling**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-6db33f?style=flat-square&logo=spring&logoColor=white)
-![React](https://img.shields.io/badge/React-61dafb?style=flat-square&logo=react&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47a248?style=flat-square&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-f14e32?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ed?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-fcc624?style=flat-square&logo=linux&logoColor=black)
 
 ---
 

@@ -87,7 +87,8 @@ FOOTER = "Keep learning. Keep building. Ship impact."
 
 # Grouped for the README tech-stack badges.
 STACK = {
-    "Languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL", "C++"],
-    "ML & Data": ["PyTorch", "scikit-learn", "NumPy", "Pandas", "OpenCV", "Matplotlib"],
-    "Backend & Tools": ["FastAPI", "Node.js", "Spring Boot", "MongoDB", "MySQL", "Git", "Docker", "Linux"],
+    "Languages": ["Python", "Java", "JavaScript", "SQL"],
+    "ML & Data": ["PyTorch", "scikit-learn", "NumPy", "Pandas", "Jupyter"],
 }
+
+EMAIL = "KABEER.24299@gmail.com"
