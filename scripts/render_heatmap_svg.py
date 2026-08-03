@@ -119,7 +119,8 @@ def build_svg(payload: dict) -> str:
     )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{height:.0f}" \
-viewBox="0 0 {width:.0f} {height:.0f}" role="img" aria-label="GitHub contribution graph">
+viewBox="0 0 {width:.0f} {height:.0f}" preserveAspectRatio="xMidYMid meet" \
+style="max-width:100%;height:auto" role="img" aria-label="GitHub contribution graph">
   <title>{PROMPT} - contribution graph</title>
   <defs>
     <style>

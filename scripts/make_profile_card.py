@@ -142,8 +142,11 @@ def build_svg() -> str:
         for i, colour in enumerate(("#28c840", "#febc2e", "#ff5f56"))
     )
 
+    # width/height give the card an intrinsic size for embeds; max-width lets a
+    # narrow viewport scale it down instead of clipping the right-hand column.
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" \
-viewBox="0 0 {WIDTH} {height}" role="img" aria-label="Kabeer - neofetch style profile card">
+viewBox="0 0 {WIDTH} {height}" preserveAspectRatio="xMidYMid meet" \
+style="max-width:100%;height:auto" role="img" aria-label="Kabeer - neofetch style profile card">
   <title>{esc(PROMPT)} - neofetch</title>
   <defs>
     <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
